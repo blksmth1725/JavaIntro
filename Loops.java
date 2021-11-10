@@ -23,7 +23,18 @@ public class Loops {
     // System.out.println("We have exited the loop");
     // }
 
-    int count = 1;
+    // -------- NESTED FOR LOOP -------//
+
+    int[] arr1 = { 1, 2, 3, 4, 5 };
+    int[] arr2 = { 6, 7, 8, 9 };
+
+    for (int i = 0; i < arr1.length; i++) {
+      for (int j = 0; j < arr2.length; j++) {
+        System.out.println(arr1[i] * arr2[j]);
+      }
+    }
+
+    // int count = 1;
 
     // -------- WHILE LOOP -------//
 
@@ -34,11 +45,11 @@ public class Loops {
     // System.out.println("We have excited the loop");
 
     // -------- DO-WHILE LOOP -------//
-    do {
-      System.out.println(count);
-      count++;
-    } while (count <= 10);
+    // do {
+    // System.out.println(count);
+    // count++;
+    // } while (count <= 10);
 
-    System.out.println("We have exited the loop");
+    // System.out.println("We have exited the loop");
   }
 }
